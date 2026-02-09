@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>찐 아카이브</title>
