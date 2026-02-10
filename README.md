@@ -33,7 +33,7 @@
 .slider {
   width: 100%;
   max-width: 800px;
-  aspect-ratio: 4/5
+  aspect-ratio: 4/5;
   margin: 40px auto;
   position: relative;
   overflow: hidden;
@@ -91,7 +91,7 @@
   }
 
   .slider {
-    height: 200px;
+    aspect-ratio: 4/5;
   }
 }
 
