@@ -76,10 +76,10 @@
 
 .slider {
   width: 100%;
-  max-width: 800px;
+  max-width: 300px;
   margin: 40px auto;
   position: relative;
-  height: 300px;   /* ← 높이 강제 고정 */
+  height: 100px;   
   overflow: hidden;
 }
 
