@@ -107,10 +107,6 @@
   object-fit: cover;
   border-radius: 8px;
 }
-@media screen and (max-width: 600px) {
-  .board-grid {
-    grid-template-columns: 1fr;
-  }
   .board-list {
   display: flex;
   flex-wrap: wrap;
@@ -150,6 +146,10 @@
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 600px) {
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
 
