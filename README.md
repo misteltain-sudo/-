@@ -37,7 +37,6 @@
   margin: 40px auto;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4/5;
 }
 
 .slide {
@@ -47,6 +46,7 @@
   height: 100%;
   object-fit: cover;
   display: none;
+  aspect-ratio: 4/5;
 }
 
 .gallery img {
