@@ -89,6 +89,9 @@
   background: #f5f5f5;
   padding: 15px;
   border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .board h2 {
@@ -98,8 +101,9 @@
 
 .board img {
   width: 100%;
+  heigt: 70%;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 8px;
 }
 @media screen and (max-width: 600px) {
   .board-grid {
@@ -123,7 +127,7 @@
 <div class="board-grid">
 
   <div class="board">
-    <h2>2026 팬아트</h2>
+    <h2>팬아트</h2>
     <img src="first.draw.png">
     <img src="two.png">
   </div>
@@ -164,7 +168,12 @@ window.onload = function () {
 
   showSlides();
 
-};
+}
+
+<a href="board1.html" class="board">
+  <h2>팬아트</h2>
+  <img src="first.draw.png">
+</a>
 
 </script>
 
