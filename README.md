@@ -101,7 +101,7 @@
 
 .board img {
   width: 100%;
-  heigt: 70%;
+  height: 70%;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -168,16 +168,8 @@ window.onload = function () {
 
   showSlides();
 
-}
-
-<a href="board1.html" class="board">
-  <h2>팬아트</h2>
-  <img src="first.draw.png">
-</a>
-
+};
 </script>
-
-
 
 </body>
 
