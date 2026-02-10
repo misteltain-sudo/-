@@ -79,17 +79,16 @@
   width: 40%; 
   max-width: 600px;
   height: 600px;
-  margin: 20px auto; 
+  margin: 40px auto; 
   overflow: hidden;
   border-radius: 10px; 
-
-  position: relative;
+  aspect-ratio: 1/1;
 }
 
 .slide {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: none; 
   border-radius: 10px;
   margin: 0 auto;
