@@ -2,6 +2,9 @@
 <head>
   <title>찐 아카이브</title>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+  <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
   <style>
  body {
   font-family: 'Pretendard', sans-serif;
@@ -53,7 +56,18 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
-}
+
+  @media screen and (max-width: 600px) {
+  .header {
+    aspect-ratio: 2/1;
+    }
+    h1 {
+    font-size: 1.5rem;
+    }
+    .slider {
+      width 100%;
+      }
+   }
 
 .header h1 {
    margin: 0;
