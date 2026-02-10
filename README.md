@@ -109,6 +109,46 @@
   .board-grid {
     grid-template-columns: 1fr;
   }
+  .board-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.board-btn {
+  background: #f5f5f5;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.board-btn:hover {
+  transform: scale(1.05);
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post {
+  text-decoration: none;
+  color: black;
+}
+
 }
 
 </style>
@@ -124,29 +164,27 @@
    <img class="slide" src="slide_two.png">
 </div>
 
-<div class="board-grid">
+<div class="board-list">
 
-  <div class="board">
-    <h2>팬아트</h2>
+  <a href="fanart.html" class="board-btn">팬아트</a>
+  <a href="photo.html" class="board-btn">사진</a>
+  <a href="daily.html" class="board-btn">일상</a>
+
+</div>
+
+<h1>팬아트 게시판</h1>
+
+<div class="post-list">
+
+  <a href="post1.html" class="post">
     <img src="first.draw.png">
+    <p>첫 팬아트</p>
+  </a>
+
+  <a href="post2.html" class="post">
     <img src="two.png">
-  </div>
-
-  <div class="board">
-    <h2>사진</h2>
-    <img src="three.png">
-    <img src="four.png">
-  </div>
-
-  <div class="board">
-    <h2>1Q 1A</h2>
-    <img src="first.draw.png">
-  </div>
-
-  <div class="board">
-    <h2>일상사진</h2>
-    <img src="two.png">
-  </div>
+    <p>두 번째 그림</p>
+  </a>
 
 </div>
 
