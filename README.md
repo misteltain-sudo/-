@@ -78,7 +78,7 @@
   position: relative;
   width: 40%; 
   max-width: 600px;
-  height: 600px;
+  height: 400px;
   margin: 40px auto; 
   overflow: hidden;
   border-radius: 10px; 
