@@ -74,27 +74,29 @@
  text-align: center;
 }
 
-.slideshow {
+.slider {
   width: 100%;
-  max-width: 300px;
+  max-width: 800px;
+  height: 300px;
   margin: 40px auto;
   position: relative;
-  height: 100px;   
   overflow: hidden;
 }
 
 .slide {
   position: absolute;
+  inset: 0;        /* top/right/bottom/left 0 */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  top: 0;
-  left: 0;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .slide.active {
-  display: block;
+  opacity: 1;
+}
+
 }
 
 .slide-container {
