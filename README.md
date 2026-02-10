@@ -45,8 +45,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+
+.slide.active {
+ opacity: 1;
+ }
 
 .gallery img {
   width: 200px;
@@ -126,15 +131,16 @@ let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 
 function showSlides() {
-  slides.forEach((slide) => (slide.style.display = "none"));
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[slideIndex].classList.add("active");
+
   slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
-  slides[slideIndex - 1].style.display = "block";
+  if (slideIndex >= slides.length) slideIndex = 0;
+
   setTimeout(showSlides, 3000);
 }
 
 showSlides();
-
 
 </script>
 
