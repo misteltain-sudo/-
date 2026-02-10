@@ -119,28 +119,24 @@
   <img id="popup-img">
 </div>
 <script>
-function openPopup(src) {
-  document.getElementById("popup-img").src = src;
-  document.getElementById("popup").style.display = "flex";
-}
+window.onload = function () {
 
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
 
-function showSlides() {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[slideIndex].classList.add("active");
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[slideIndex].classList.add("active");
 
-  slideIndex++;
-  if (slideIndex >= slides.length) slideIndex = 0;
+    slideIndex++;
+    if (slideIndex >= slides.length) slideIndex = 0;
 
-  setTimeout(showSlides, 3000);
-}
+    setTimeout(showSlides, 3000);
+  }
 
-showSlides();
+  showSlides();
+
+};
 
 </script>
 
