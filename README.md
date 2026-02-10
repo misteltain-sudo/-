@@ -74,24 +74,27 @@
  text-align: center;
 }
 
-.slideshow {
+.slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
   position: relative;
-  width: 40%; 
-  max-width: 600px;
-  height: 400px;
-  margin: 40px auto; 
+  height: 300px;   /* ← 높이 강제 고정 */
   overflow: hidden;
-  border-radius: 10px; 
-  aspect-ratio: 1/1;
 }
 
 .slide {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none; 
-  border-radius: 10px;
-  margin: 0 auto;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.slide.active {
+  display: block;
 }
 
 .slide-container {
