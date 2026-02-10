@@ -31,8 +31,8 @@
 }
 
 .slider {
-  width: 100%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 400px;
   aspect-ratio: 4/5;
   margin: 40px auto;
   position: relative;
