@@ -64,23 +64,6 @@
   transform: scale(1.1);
 }
 
-#popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-}
-
-#popup img {
-  max-width: 90%;
-  max-height: 90%;
-}
-
 @media screen and (max-width: 600px) {
   .header {
     aspect-ratio: 2/1;
@@ -92,6 +75,35 @@
 
   .slider {
     aspect-ratio: 4/5;
+  }
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.board {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.board h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.board img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 600px) {
+  .board-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -107,17 +119,33 @@
    <img class="slide" src="slide_one.png">
    <img class="slide" src="slide_two.png">
 </div>
-<div class="gallery">
-  <img src="first.draw.png" onclick="openPopup(this.src)">
-  <img src="two.png" onclick="openPopup(this.src)">
-  <img src="three.png" onclick="openPopup(this.src)">
-  <img src="four.png" onclick="openPopup(this.src)">
+
+<div class="board-grid">
+
+  <div class="board">
+    <h2>2026 팬아트</h2>
+    <img src="first.draw.png">
+    <img src="two.png">
+  </div>
+
+  <div class="board">
+    <h2>사진</h2>
+    <img src="three.png">
+    <img src="four.png">
+  </div>
+
+  <div class="board">
+    <h2>1Q 1A</h2>
+    <img src="first.draw.png">
+  </div>
+
+  <div class="board">
+    <h2>일상사진</h2>
+    <img src="two.png">
+  </div>
+
 </div>
 
-
-<div id="popup" onclick="closePopup()">
-  <img id="popup-img">
-</div>
 <script>
 window.onload = function () {
 
