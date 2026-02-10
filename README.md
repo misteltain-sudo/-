@@ -33,10 +33,11 @@
 .slider {
   width: 100%;
   max-width: 800px;
-  height: 300px;
+  height: 400px;
   margin: 40px auto;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 4/5;
 }
 
 .slide {
