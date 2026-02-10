@@ -57,23 +57,6 @@
   margin: 0 auto;
   width: 100%;
 
-  @media screen and (max-width: 600px) {
-  .header {
-    aspect-ratio: 2/1;
-    }
-    h1 {
-    font-size: 1.5rem;
-    }
-    .slider {
-      width 100%;
-      }
-   }
-
-.header h1 {
-   margin: 0;
- text-align: center;
-}
-
 .slider {
   width: 100%;
   max-width: 800px;
@@ -111,6 +94,20 @@
     }
     }
 
+@media screen and (max-width: 600px) {
+  .header {
+    aspect-ratio: 2 / 1;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .slider {
+    height: 200px;
+  }
+}
+
 </style>
 
 </head>
@@ -119,7 +116,7 @@
   <div class="header">
    <h1>찐's 아카이브</h1>
 </div>
-  <div class="slideshow">
+  <div class="slider">
    <img class="slide" src="slide_one.png">
    <img class="slide" src="slide_two.png">
 </div>
