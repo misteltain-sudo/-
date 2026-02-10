@@ -74,7 +74,7 @@
  text-align: center;
 }
 
-.slider {
+.slideshow {
   width: 100%;
   max-width: 300px;
   margin: 40px auto;
