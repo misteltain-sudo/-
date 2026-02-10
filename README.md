@@ -78,20 +78,22 @@
   }
 }
 .board-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 900px;
+  display: flex;
+  gap: 25px;
+  max-width: 100%;
   margin: 40px auto;
+  overflow-x: auto;
+  padding: 0 20px;
 }
 
 .board {
+  min-width: 220px;
   background: #f5f5f5;
   padding: 15px;
   border-radius: 12px;
-  width: 100%;
-  aspect-ratio: 1/1;
-  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  flex-shrink: 0;
 }
 
 .board h2 {
