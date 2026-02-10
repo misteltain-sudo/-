@@ -100,6 +100,13 @@
   transition: transform 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+ .slider {
+   width: 100%;
+    aspect-ratio: 1/1;
+    }
+    }
+
 </style>
 
 </head>
